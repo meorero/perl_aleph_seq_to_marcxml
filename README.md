@@ -26,24 +26,35 @@ cpan Catmandu::Exporter::MARC
 cpan XML::LibXML
 cpan Encode
 cpan PAR::Packer
+```
 
 ## Usage
 Run the script using Perl:
 
+```sh
 perl marc_converter.pl
+```
 
 ## Creating a Windows Executable
 To create a standalone Windows executable, use PAR::Packer:
 
 Open your command prompt.
 Navigate to the directory containing your Perl script:
+```
 cd path\to\your\script
+```
 
 Create the executable with the following command:
+```
 pp -o marc_converter.exe -gui -c -z 9 marc_converter.pl
+```
 
-Might be also - simpler:
+
+Might be also - simpler:  
+
+```sh
 pp -o marc_converter_001.exe -gui  aaa_perltk_canman_00001.pl
 pp -o marc_converter_002.exe -gui  aaa_perltk_canman_00002.pl
+```
 
 
